@@ -11,7 +11,7 @@ rocket-lift-off $mission_name
 rocket_status=$(rocket-status $mission_name)
 echo "Status of Launch: $rocket_status"
 
-if [$rocket_status == "failed"]
+if [$rocket_status = "failed"]
 then
     rocket-debug $mission_name
 
@@ -84,3 +84,6 @@ fi
 
 # if file is writable
 [ -w FILE ]
+
+# if input is empty - then case chalega vrna else chalega
+[ -z "$1"]
