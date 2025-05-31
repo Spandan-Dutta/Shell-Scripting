@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function launch-rocket() {
     mission_name=$1
 
@@ -30,3 +32,6 @@ function launch-rocket() {
 # calling the function
 
 # launch-rocket lunar-mission
+
+
+# apt install shell-check
