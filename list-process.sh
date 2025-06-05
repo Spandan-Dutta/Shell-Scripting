@@ -1,0 +1,1 @@
+ps -ef | awk -F" " '${print $2}'

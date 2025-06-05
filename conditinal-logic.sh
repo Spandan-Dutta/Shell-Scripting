@@ -62,10 +62,15 @@ fi
 # and operator
 [ cond1 ] && [ cond2 ]
 [[cond1 && cond2 ]] 
+date 
+test $? -eq 0 && echo "Date command executed successfully"
 
 # or operator
 [ cond1 ] || [ cond2 ]
 [[cond1 || cond2 ]]   
+date
+test $? -eq 0 && echo "Date command executed successfully" || echo "Date command failed"
+# Instead of test command we can use []
 
 
 # Some commands related to Files operations
